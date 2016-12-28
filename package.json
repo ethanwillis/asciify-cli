@@ -1,0 +1,26 @@
+{
+  "name": "asciify-image-cli",
+  "version": "0.0.1",
+  "description": "A CLI Client for the asciify-image package",
+  "main": "asciify-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ascii",
+    "asciify",
+    "asciify-image",
+    "cli",
+    "image"
+  ],
+  "author": "Ethan Willis",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "asciify-image": "0.0.8",
+    "cli": "^1.0.1",
+    "detect-file-type": "^0.1.0",
+    "headless-terminal": "^0.4.0",
+    "pngjs": "^3.0.0",
+    "screen-buffer": "^0.4.0"
+  }
+}
