@@ -33,14 +33,14 @@ if(options.file != null) {
 			if( valid_file_types.includes(file_info.mime) ) {
 				asciify(options.file, asciify_options, function(asciified) {
 					// Text output
-					console.log(asciified)
-
+					console.log(asciified);
+					
 					// Image output using terminal emulation and screen buffer dump
-					//var terminal = new HeadlessTerminal(asciify_options.width, asciify_options.height)
+					var terminal = new HeadlessTerminal(asciify_options.width, asciify_options.height)
 					
 					// Output framebuffer -- Test -- Works
-					//terminal.write(asciified)
-					//fs.writeFileSync('output', terminal.displayBuffer.toString());
+					terminal.write(asciified)
+					fs.writeFileSync('output', terminal.displayBuffer.toString());
 	
 					// Save screen buffer as image Following 3 lines don't work.
 					//png = PNG.sync.read(terminal.displayBuffer.toString());	
